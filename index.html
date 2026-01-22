@@ -249,6 +249,7 @@
                 J
             </button>
         </div>
+        
         <div id="activityCard" class="activity-card">
             <div class="activity-title" id="activityTitle"></div>
             <div class="activity-description" id="activityDescription"></div>
@@ -292,7 +293,7 @@
                 // Add selected class to clicked button
                 this.classList.add('selected');
                 
-                // Give me a grounding exercise
+                // Get a grounding activity
                 currentActivityIndex = Math.floor(Math.random() * activities.length);
                 showActivity();
             });
@@ -325,7 +326,7 @@
                 // Remove selected class from all emotion buttons
                 document.querySelectorAll('.emotion-button').forEach(btn => btn.classList.remove('selected'));
                 
-                // Get a random activity
+                // Get a grounding activity
                 currentActivityIndex = Math.floor(Math.random() * activities.length);
                 showActivity();
                 
